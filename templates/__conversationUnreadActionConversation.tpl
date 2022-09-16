@@ -1,0 +1,1 @@
+<li><a href="{link controller='ConversationUnread' id=$conversation->conversationID}t={csrfToken type=url}{/link}" class="button"><span class="icon icon16 fa-check"></span> <span>{lang}wcf.user.button.conversation.unread{/lang}</span></a></li>

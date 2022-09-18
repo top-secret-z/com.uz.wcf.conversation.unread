@@ -1,44 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<package name="com.uz.wcf.conversation.unread" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/2019/package.xsd">
-	<packageinformation>
-		<packagename>Conversation Unread</packagename>
-		<packagedescription>Allows users to mark a read conversation a unread.</packagedescription>
-		<packagename language="de">Konversation ungelesen</packagename>
-		<packagedescription language="de">Erlaubt es Benutzern, gelesene Konversationen als ungelesen zu markieren.</packagedescription>
-		<version>5.5.0</version>
-		<date>2022-05-10</date>
-	</packageinformation>
-	
-	<authorinformation>
-		<author>Zaydowicz</author>
-	</authorinformation>
-	
-	<requiredpackages>
-		<requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
-		<requiredpackage minversion="5.3.0">com.woltlab.wcf.conversation</requiredpackage>
-	</requiredpackages>
-	
-	<excludedpackages>
-		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
-	</excludedpackages>
-	
-	<instructions type="install">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="language">language/*.xml</instruction>
-		<instruction type="template">templates.tar</instruction>
-		<instruction type="templateListener">templateListener.xml</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.3.0">
-		<instruction type="file">files.tar</instruction>
-		<instruction type="template">templates.tar</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.0">
-		<instruction type="file">files.tar</instruction>
-	</instructions>
-	
-	<instructions type="update" fromversion="5.4.1">
-		<instruction type="file">files.tar</instruction>
-	</instructions>
+<package name="de.softcreatr.wcf.conversation.unread" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com https://www.woltlab.com/XSD/2019/package.xsd">
+    <packageinformation>
+        <packagename>Conversation Unread</packagename>
+        <packagedescription>Allows users to mark a read conversation a unread.</packagedescription>
+        <packagename language="de">Konversation ungelesen</packagename>
+        <packagedescription language="de">Erlaubt es Benutzern, gelesene Konversationen als ungelesen zu markieren.</packagedescription>
+        <version>5.5.1</version>
+        <date>2022-09-18</date>
+    </packageinformation>
+
+    <authorinformation>
+        <author><![CDATA[SoftCreatR.dev]]></author>
+        <authorurl><![CDATA[https://softcreatr.dev]]></authorurl>
+    </authorinformation>
+
+    <requiredpackages>
+        <requiredpackage minversion="5.3.0">com.woltlab.wcf</requiredpackage>
+        <requiredpackage minversion="5.3.0">com.woltlab.wcf.conversation</requiredpackage>
+    </requiredpackages>
+
+    <excludedpackages>
+        <excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+        <excludedpackage version="*">com.uz.wcf.conversation.unread</excludedpackage>
+    </excludedpackages>
+
+    <instructions type="install">
+        <instruction type="file" />
+        <instruction type="language" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.3.0">
+        <instruction type="file" />
+        <instruction type="template" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.0">
+        <instruction type="file" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.4.1">
+        <instruction type="file" />
+    </instructions>
+
+    <instructions type="update" fromversion="5.5.0">
+        <instruction type="file" />
+        <instruction type="language" />
+        <instruction type="template" />
+        <instruction type="templateListener" />
+    </instructions>
 </package>
